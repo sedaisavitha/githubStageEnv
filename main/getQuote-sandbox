@@ -2,4 +2,4 @@ Type: AWS::Lambda::Function
 Properties: 
   FunctionName: getQuote-sandbox
   MemorySize: 
-  Timeout: 32
+  Timeout: 26
