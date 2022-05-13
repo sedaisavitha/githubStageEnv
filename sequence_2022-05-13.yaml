@@ -1,0 +1,15 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: trace-test-endpoint
+  MemorySize: 
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: getQuote-sandbox
+  MemorySize: 185
+  Timeout: 12
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: fullstack-restapi-dev-formSubmit
+  MemorySize: 
+  Timeout: 
