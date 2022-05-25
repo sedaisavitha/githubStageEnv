@@ -1,0 +1,15 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: getQuote-sandbox
+  MemorySize: 185
+  Timeout: 38
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: add
+  MemorySize: 2047
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: datadog-forwarder-Forwarder-qYj6V0EGvQm1
+  MemorySize: 4275
+  Timeout: 
