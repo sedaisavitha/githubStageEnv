@@ -1,0 +1,15 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: trace-test-endpoint
+  MemorySize: 4162
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: test-pc-2
+  MemorySize: 192
+  Timeout: 
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: fullstack-restapi-dev-formSubmit
+  MemorySize: 1344
+  Timeout: 
