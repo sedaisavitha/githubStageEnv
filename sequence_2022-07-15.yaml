@@ -1,0 +1,10 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: getQuote
+  MemorySize: 303
+  Timeout: 6
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: HelloWorld:2
+  MemorySize: 
+  Timeout: 
