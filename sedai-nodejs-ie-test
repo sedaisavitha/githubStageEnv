@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: sedai-nodejs-ie-test
+  MemorySize: 
+  Timeout: 13
