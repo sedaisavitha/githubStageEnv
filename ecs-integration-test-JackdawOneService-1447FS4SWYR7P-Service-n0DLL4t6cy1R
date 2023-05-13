@@ -1,0 +1,21 @@
+Type: AWS::ECS::Service
+Properties: 
+  ServiceName: ecs-integration-test-JackdawOneService-1447FS4SWYR7P-Service-n0DLL4t6cy1R
+  DesiredCount: 2
+SedaiState:
+  --- !<ECSResourceConfigState>
+desiredCount: 2
+runningCount: 0
+isFargate: false
+taskCpuHardLimitInUnits: 1041.0
+taskMemoryHardLimitInMiB: null
+containerLimits:
+- containerName: "Jackdaw-I-1C2G-3C"
+  containerImage: "072125767554.dkr.ecr.us-east-1.amazonaws.com/sedai-labs/jackdaw-one:0.0.1"
+  essential: true
+  memorySoftLimit: 911
+  memoryHardLimit: 1793
+  cpuSoftLimit: 0
+  validContainerMemoryHardLimit: true
+  validContainerCpuSoftLimit: false
+  validContainerMemorySoftLimit: true
