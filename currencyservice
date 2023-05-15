@@ -1,0 +1,30 @@
+Deployment: currencyservice
+SedaiState:
+  --- !<KubeResourceConfigState>
+replicas: 1
+kubeContainerConfigStateMap:
+  server:
+    cpuLimit: "0.3"
+    cpuLimitValue: !<K8sCpuValue>
+      value: 0.3
+      metricUnit: "CORES"
+      humanReadableRepresentation: "300m"
+      machineFriendlyRepresentation: "300m"
+    cpuRequest: "0.117"
+    cpuRequestValue: !<K8sCpuValue>
+      value: 0.117
+      metricUnit: "CORES"
+      humanReadableRepresentation: "117m"
+      machineFriendlyRepresentation: "117m"
+    memoryLimitBytes: 60557005
+    memoryLimitValue: !<MemoryValue>
+      value: 6.0557005E7
+      metricUnit: "BYTES"
+      humanReadableRepresentation: "57.75 MiB"
+      machineFriendlyRepresentation: "57.75 MiB"
+    memoryRequestBytes: 44185480
+    memoryRequestValue: !<MemoryValue>
+      value: 4.418548E7
+      metricUnit: "BYTES"
+      humanReadableRepresentation: "42.14 MiB"
+      machineFriendlyRepresentation: "42.14 MiB"
