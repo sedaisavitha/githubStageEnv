@@ -1,0 +1,21 @@
+Type: AWS::ECS::Service
+Properties: 
+  ServiceName: ecs-integration-test-ExpressTwoService-5O4Y7HO5RC8M-Service-SNv0YxUwHCus
+  DesiredCount: 2
+SedaiState:
+  --- !<ECSResourceConfigState>
+desiredCount: 2
+runningCount: 0
+isFargate: false
+taskCpuHardLimitInUnits: null
+taskMemoryHardLimitInMiB: null
+containerLimits:
+- containerName: "Express-Two-ICIIG-IIIC"
+  containerImage: "072125767554.dkr.ecr.us-east-1.amazonaws.com/sedai-labs/express-two:0.0.1"
+  essential: true
+  memorySoftLimit: 343
+  memoryHardLimit: 1992
+  cpuSoftLimit: 1604
+  validContainerMemoryHardLimit: true
+  validContainerCpuSoftLimit: true
+  validContainerMemorySoftLimit: true
