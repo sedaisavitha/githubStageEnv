@@ -1,0 +1,30 @@
+Deployment: shippingservice
+SedaiState:
+  --- !<KubeResourceConfigState>
+replicas: 1
+kubeContainerConfigStateMap:
+  server:
+    cpuLimit: "0.255"
+    cpuLimitValue: !<K8sCpuValue>
+      value: 0.255
+      metricUnit: "CORES"
+      humanReadableRepresentation: "255m"
+      machineFriendlyRepresentation: "255m"
+    cpuRequest: "0.117"
+    cpuRequestValue: !<K8sCpuValue>
+      value: 0.117
+      metricUnit: "CORES"
+      humanReadableRepresentation: "117m"
+      machineFriendlyRepresentation: "117m"
+    memoryLimitBytes: 66022200
+    memoryLimitValue: !<MemoryValue>
+      value: 6.60222E7
+      metricUnit: "BYTES"
+      humanReadableRepresentation: "62.96 MiB"
+      machineFriendlyRepresentation: "62.96 MiB"
+    memoryRequestBytes: 33885609
+    memoryRequestValue: !<MemoryValue>
+      value: 3.3885609E7
+      metricUnit: "BYTES"
+      humanReadableRepresentation: "32.32 MiB"
+      machineFriendlyRepresentation: "32.32 MiB"
