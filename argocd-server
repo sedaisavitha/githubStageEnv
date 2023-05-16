@@ -1,0 +1,22 @@
+Deployment: argocd-server
+SedaiState:
+  --- !<KubeResourceConfigState>
+replicas: 1
+kubeContainerConfigStateMap:
+  argocd-server:
+    cpuLimit: null
+    cpuLimitValue: null
+    cpuRequest: null
+    cpuRequestValue: null
+    memoryLimitBytes: 311198785
+    memoryLimitValue: !<MemoryValue>
+      value: 3.11198785E8
+      metricUnit: "BYTES"
+      humanReadableRepresentation: "296.78 MiB"
+      machineFriendlyRepresentation: "296.78 MiB"
+    memoryRequestBytes: 307278642
+    memoryRequestValue: !<MemoryValue>
+      value: 3.07278642E8
+      metricUnit: "BYTES"
+      humanReadableRepresentation: "293.04 MiB"
+      machineFriendlyRepresentation: "293.04 MiB"
