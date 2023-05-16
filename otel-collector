@@ -1,0 +1,30 @@
+Deployment: otel-collector
+SedaiState:
+  --- !<KubeResourceConfigState>
+replicas: 1
+kubeContainerConfigStateMap:
+  otel-collector:
+    cpuLimit: "0.3"
+    cpuLimitValue: !<K8sCpuValue>
+      value: 0.3
+      metricUnit: "CORES"
+      humanReadableRepresentation: "300m"
+      machineFriendlyRepresentation: "300m"
+    cpuRequest: "0.15"
+    cpuRequestValue: !<K8sCpuValue>
+      value: 0.15
+      metricUnit: "CORES"
+      humanReadableRepresentation: "150m"
+      machineFriendlyRepresentation: "150m"
+    memoryLimitBytes: 393745920
+    memoryLimitValue: !<MemoryValue>
+      value: 3.9374592E8
+      metricUnit: "BYTES"
+      humanReadableRepresentation: "375.51 MiB"
+      machineFriendlyRepresentation: "375.51 MiB"
+    memoryRequestBytes: 196872960
+    memoryRequestValue: !<MemoryValue>
+      value: 1.9687296E8
+      metricUnit: "BYTES"
+      humanReadableRepresentation: "187.75 MiB"
+      machineFriendlyRepresentation: "187.75 MiB"
