@@ -1,0 +1,30 @@
+Deployment: emailservice
+SedaiState:
+  --- !<KubeResourceConfigState>
+replicas: 1
+kubeContainerConfigStateMap:
+  server:
+    cpuLimit: "0.3"
+    cpuLimitValue: !<K8sCpuValue>
+      value: 0.3
+      metricUnit: "CORES"
+      humanReadableRepresentation: "300m"
+      machineFriendlyRepresentation: "300m"
+    cpuRequest: "0.117"
+    cpuRequestValue: !<K8sCpuValue>
+      value: 0.117
+      metricUnit: "CORES"
+      humanReadableRepresentation: "117m"
+      machineFriendlyRepresentation: "117m"
+    memoryLimitBytes: 59464858
+    memoryLimitValue: !<MemoryValue>
+      value: 5.9464858E7
+      metricUnit: "BYTES"
+      humanReadableRepresentation: "56.71 MiB"
+      machineFriendlyRepresentation: "56.71 MiB"
+    memoryRequestBytes: 44781513
+    memoryRequestValue: !<MemoryValue>
+      value: 4.4781513E7
+      metricUnit: "BYTES"
+      humanReadableRepresentation: "42.71 MiB"
+      machineFriendlyRepresentation: "42.71 MiB"
