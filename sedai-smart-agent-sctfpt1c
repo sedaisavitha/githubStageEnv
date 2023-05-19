@@ -1,0 +1,55 @@
+Deployment: sedai-smart-agent-sctfpt1c
+SedaiState:
+  --- !<KubeResourceConfigState>
+replicas: 1
+kubeContainerConfigStateMap:
+  sedai-smart-agent:
+    cpuLimit: "0.618"
+    cpuLimitValue: !<K8sCpuValue>
+      value: 0.618
+      metricUnit: "CORES"
+      machineFriendlyRepresentation: "618m"
+      humanReadableRepresentation: "618m"
+    cpuRequest: "0.477"
+    cpuRequestValue: !<K8sCpuValue>
+      value: 0.477
+      metricUnit: "CORES"
+      machineFriendlyRepresentation: "477m"
+      humanReadableRepresentation: "477m"
+    memoryLimitBytes: 961340846
+    memoryLimitValue: !<MemoryValue>
+      value: 9.61340846E8
+      metricUnit: "BYTES"
+      machineFriendlyRepresentation: "916.81 MiB"
+      humanReadableRepresentation: "916.81 MiB"
+    memoryRequestBytes: 920715395
+    memoryRequestValue: !<MemoryValue>
+      value: 9.20715395E8
+      metricUnit: "BYTES"
+      machineFriendlyRepresentation: "878.06 MiB"
+      humanReadableRepresentation: "878.06 MiB"
+  sedai-smart-agent-logs:
+    cpuLimit: "0.083"
+    cpuLimitValue: !<K8sCpuValue>
+      value: 0.083
+      metricUnit: "CORES"
+      machineFriendlyRepresentation: "83m"
+      humanReadableRepresentation: "83m"
+    cpuRequest: "0.038"
+    cpuRequestValue: !<K8sCpuValue>
+      value: 0.038
+      metricUnit: "CORES"
+      machineFriendlyRepresentation: "38m"
+      humanReadableRepresentation: "38m"
+    memoryLimitBytes: 112071803
+    memoryLimitValue: !<MemoryValue>
+      value: 1.12071803E8
+      metricUnit: "BYTES"
+      machineFriendlyRepresentation: "106.88 MiB"
+      humanReadableRepresentation: "106.88 MiB"
+    memoryRequestBytes: 56035901
+    memoryRequestValue: !<MemoryValue>
+      value: 5.6035901E7
+      metricUnit: "BYTES"
+      machineFriendlyRepresentation: "53.44 MiB"
+      humanReadableRepresentation: "53.44 MiB"
