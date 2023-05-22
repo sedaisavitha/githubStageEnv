@@ -1,0 +1,30 @@
+Deployment: grapes-app
+SedaiState:
+  --- !<KubeResourceConfigState>
+replicas: 1
+kubeContainerConfigStateMap:
+  grapes-container:
+    cpuLimit: "0.3"
+    cpuLimitValue: !<K8sCpuValue>
+      value: 0.3
+      metricUnit: "CORES"
+      machineFriendlyRepresentation: "300m"
+      humanReadableRepresentation: "300m"
+    cpuRequest: "0.117"
+    cpuRequestValue: !<K8sCpuValue>
+      value: 0.117
+      metricUnit: "CORES"
+      machineFriendlyRepresentation: "117m"
+      humanReadableRepresentation: "117m"
+    memoryLimitBytes: 18874368
+    memoryLimitValue: !<MemoryValue>
+      value: 1.8874368E7
+      metricUnit: "BYTES"
+      machineFriendlyRepresentation: "18 MiB"
+      humanReadableRepresentation: "18 MiB"
+    memoryRequestBytes: 10485760
+    memoryRequestValue: !<MemoryValue>
+      value: 1.048576E7
+      metricUnit: "BYTES"
+      machineFriendlyRepresentation: "10 MiB"
+      humanReadableRepresentation: "10 MiB"
