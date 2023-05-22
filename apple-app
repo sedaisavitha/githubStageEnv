@@ -1,0 +1,30 @@
+Deployment: apple-app
+SedaiState:
+  --- !<KubeResourceConfigState>
+replicas: 1
+kubeContainerConfigStateMap:
+  apple-app-09:
+    cpuLimit: "0.232"
+    cpuLimitValue: !<K8sCpuValue>
+      value: 0.232
+      metricUnit: "CORES"
+      machineFriendlyRepresentation: "232m"
+      humanReadableRepresentation: "232m"
+    cpuRequest: "0.094"
+    cpuRequestValue: !<K8sCpuValue>
+      value: 0.094
+      metricUnit: "CORES"
+      machineFriendlyRepresentation: "94m"
+      humanReadableRepresentation: "94m"
+    memoryLimitBytes: 16246846
+    memoryLimitValue: !<MemoryValue>
+      value: 1.6246846E7
+      metricUnit: "BYTES"
+      machineFriendlyRepresentation: "15.49 MiB"
+      humanReadableRepresentation: "15.49 MiB"
+    memoryRequestBytes: 9769163
+    memoryRequestValue: !<MemoryValue>
+      value: 9769163.0
+      metricUnit: "BYTES"
+      machineFriendlyRepresentation: "9.32 MiB"
+      humanReadableRepresentation: "9.32 MiB"
