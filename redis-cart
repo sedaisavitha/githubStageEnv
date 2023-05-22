@@ -1,0 +1,30 @@
+Deployment: redis-cart
+SedaiState:
+  --- !<KubeResourceConfigState>
+replicas: 1
+kubeContainerConfigStateMap:
+  redis:
+    cpuLimit: "0.26"
+    cpuLimitValue: !<K8sCpuValue>
+      value: 0.26
+      metricUnit: "CORES"
+      machineFriendlyRepresentation: "260m"
+      humanReadableRepresentation: "260m"
+    cpuRequest: "0.11"
+    cpuRequestValue: !<K8sCpuValue>
+      value: 0.11
+      metricUnit: "CORES"
+      machineFriendlyRepresentation: "110m"
+      humanReadableRepresentation: "110m"
+    memoryLimitBytes: 86610490
+    memoryLimitValue: !<MemoryValue>
+      value: 8.661049E7
+      metricUnit: "BYTES"
+      machineFriendlyRepresentation: "82.6 MiB"
+      humanReadableRepresentation: "82.6 MiB"
+    memoryRequestBytes: 65316848
+    memoryRequestValue: !<MemoryValue>
+      value: 6.5316848E7
+      metricUnit: "BYTES"
+      machineFriendlyRepresentation: "62.29 MiB"
+      humanReadableRepresentation: "62.29 MiB"
