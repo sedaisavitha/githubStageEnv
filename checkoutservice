@@ -1,0 +1,30 @@
+Deployment: checkoutservice
+SedaiState:
+  --- !<KubeResourceConfigState>
+replicas: 1
+kubeContainerConfigStateMap:
+  server:
+    cpuLimit: "0.3"
+    cpuLimitValue: !<K8sCpuValue>
+      value: 0.3
+      metricUnit: "CORES"
+      machineFriendlyRepresentation: "300m"
+      humanReadableRepresentation: "300m"
+    cpuRequest: "0.117"
+    cpuRequestValue: !<K8sCpuValue>
+      value: 0.117
+      metricUnit: "CORES"
+      machineFriendlyRepresentation: "117m"
+      humanReadableRepresentation: "117m"
+    memoryLimitBytes: 27890176
+    memoryLimitValue: !<MemoryValue>
+      value: 2.7890176E7
+      metricUnit: "BYTES"
+      machineFriendlyRepresentation: "26.6 MiB"
+      humanReadableRepresentation: "26.6 MiB"
+    memoryRequestBytes: 15645120
+    memoryRequestValue: !<MemoryValue>
+      value: 1.564512E7
+      metricUnit: "BYTES"
+      machineFriendlyRepresentation: "14.92 MiB"
+      humanReadableRepresentation: "14.92 MiB"
