@@ -1,0 +1,26 @@
+Deployment: lab02ekscluster
+SedaiState:
+  --- !<KubeResourceConfigState>
+replicas: 2
+kubeContainerConfigStateMap:
+  delegate:
+    cpuLimit: null
+    cpuLimitValue: null
+    cpuRequest: "0.417"
+    cpuRequestValue: !<K8sCpuValue>
+      value: 0.417
+      metricUnit: "CORES"
+      machineFriendlyRepresentation: "417m"
+      humanReadableRepresentation: "417m"
+    memoryLimitBytes: 1828542249
+    memoryLimitValue: !<MemoryValue>
+      value: 1.828542249E9
+      metricUnit: "BYTES"
+      machineFriendlyRepresentation: "1.7 GiB"
+      humanReadableRepresentation: "1.7 GiB"
+    memoryRequestBytes: 1793148846
+    memoryRequestValue: !<MemoryValue>
+      value: 1.793148846E9
+      metricUnit: "BYTES"
+      machineFriendlyRepresentation: "1.67 GiB"
+      humanReadableRepresentation: "1.67 GiB"
