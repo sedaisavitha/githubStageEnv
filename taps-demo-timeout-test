@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: taps-demo-timeout-test
+  MemorySize: 
+  Timeout: 18

@@ -1,0 +1,5 @@
+Type: AWS::Lambda::Function
+Properties: 
+  FunctionName: LambdaWithAliasTest:3
+  MemorySize: 154
+  Timeout: 4
